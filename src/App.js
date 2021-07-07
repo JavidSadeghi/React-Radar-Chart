@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import React from "react";
+import { RadarChart } from './components/RadarChart';
+
+
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container' >
+        <h1>Snow Flake/Radar Chart Demo</h1>
+        <RadarChart />
+        <h5>Javid Sadeghi Ashrafi</h5>
+        <h6>javid.sadeghi@gmail.com</h6>
+        <h6>7/7/2021</h6>
+      </div>
     </div>
   );
 }
-
-export default App;
